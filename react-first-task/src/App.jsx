@@ -28,9 +28,9 @@ function App() {
         <Container fluid>
           <Nav className="m-auto">
             <Nav.Link href="#home" className="nav_link">home</Nav.Link>
-            <Nav.Link href="#features" className="nav_link">ux design</Nav.Link>
-            <Nav.Link href="#pricing" className="nav_link">other work</Nav.Link>
-            <Nav.Link href="#pricing" className="nav_link">about me</Nav.Link>
+            <Nav.Link href="#ux-design" className="nav_link">ux design</Nav.Link>
+            <Nav.Link href="#other-work" className="nav_link">other work</Nav.Link>
+            <Nav.Link href="#about-me" className="nav_link">about me</Nav.Link>
           </Nav>
         </Container>
       </Navbar>    
