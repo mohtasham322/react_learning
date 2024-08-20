@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import Home from './pages/home'
 import './index.css'
 
 const App = ()=>{
   return <>
-  <h1 className='text-4xl font-bold underline text-yellow'>Hello World</h1>
+  <Home/>
   </>
 }
 
