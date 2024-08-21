@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family:sans-serif;
+}
+.btn{  
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+.btn-primary{
+  background-color: #FFAB40;
+  color: #fff;
+}
+.over-padding{
+  padding: 1rem 4rem !important;
+}
+.text-primary{
+  color: #FFAB40;
+}
+.input{
+  width: 100%;
+  border: 1px solid #80808075;
+  padding: 10px;
+  border-radius: 10px;
+}
+.input:focus{
+  outline: 1px solid #FFAB40;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.checkboxDiv{
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-checkmark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #f5f5f5; /* Light background for unchecked state */
+  border: 2px solid #ddd; /* Border for unchecked state */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Spacing between checkbox and label text */
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.checkboxDiv input[type="checkbox"]:checked + .checkbox-checkmark {
+  background-color: #009688; /* Background color for checked state */
+  border-color: #009688; /* Border color for checked state */
+}
+
+.checkbox-checkmark:after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  width: 6px;
+  height: 12px;
+  border: solid #ffab40;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transform-origin: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.checkboxDiv input[type="checkbox"]:checked + .checkbox-checkmark:after {
+  opacity: 1;
+}
+
+/* Optional: Style the label text */
+.checkboxDiv span {
+  font-size: 14px;
+  color: #333;
+}
