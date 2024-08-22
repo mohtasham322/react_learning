@@ -1,9 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { Outlet, Link } from "react-router-dom";
-import './index.css'
-import Login from './pages/auth/login'
-import Register from './pages/auth/register'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import '@heroicons/react/24/outline';
+import './index.css';
+import Home from './pages/home';
+import Login from './pages/auth/login';
+import Register from './pages/auth/register';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,7 +14,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Link to={'/login'}>login</Link> ,
+    element: <Home/> ,
   },
   {
     path: "/login",

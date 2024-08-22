@@ -16,9 +16,8 @@ function login() {
                         <input type="password" name="password" id="password" className="input" placeholder="Enter password" required />
                     </div>
                     <div className="my-3">
-                        <input type="checkbox" name="remember" id="remember" required />
                         <label htmlFor="remember" className="checkboxDiv">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="remember" name="remember" />
                         <span className="checkbox-checkmark"></span>
                             remember me</label>
                     </div>
